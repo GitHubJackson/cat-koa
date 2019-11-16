@@ -6,7 +6,9 @@ get clone git@github.com:GitHubJackson/cat-koa.git
 cd cat-koa2
 npm install
 ```
-数据库要使用的话请记得先修改为自己的数据库！
+在浏览器输入 'http://localhost:3000/demo/test' 试试
+
+> 数据库要使用的话请记得先修改为自己的数据库！
 ### 目录结构
 ```
 + bin

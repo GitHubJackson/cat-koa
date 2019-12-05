@@ -3,7 +3,11 @@ const mongoose = require('../utils/db')
 // 用户表
 var demoSchema = mongoose.Schema({
   id: String,
-  name: String
+  name: String,
+  _otherModel: {
+    type: Schema.Types.ObjectId,
+    ref: 'other' // 对应 model 名，关联其他数据表
+  }
 });
 demoSchema.methods.speak = function () {
   var greeting = this.name
